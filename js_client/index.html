@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.1.0/themes/reset-min.css" integrity="sha256-2AeJLzExpZvqLUxMfcs+4DWcMwNfpnjUeAAvEtPr0wU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.1.0/themes/satellite-min.css" integrity="sha256-p/rGN4RGy6EDumyxF9t7LKxWGg6/MZfGhJM/asKkqvA=" crossorigin="anonymous">
+
+</head>
+<body>
+    <form action="" method="post" id="login-form">
+        <input type="text" name="username" placeholder="Your Username">
+        <input type="password" name="password" placeholder="Your Password">
+        <input type="submit" value="Submit">
+    </form>
+
+    <form style='display:none;' action="" method="get" id="search-form">
+        <input type="text" name="q" placeholder="Your search">
+        <input type="submit" value="Search">
+    </form>
+
+    <div id="content-box"></div>
+
+    <div id="searchbox"></div>
+    <div id="clear-refinements"></div>
+    <div id="user-list"></div>
+    <div>
+        <h3>Public</h3>
+        <div id="public-list"></div>
+    </div>
+    <div id="hits"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.22.0/dist/algoliasearch-lite.umd.js" 
+    integrity="sha256-/2SlAlnMUV7xVQfSkUQTMUG3m2LPXAzbS8I+xybYKwA=" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.63.0/dist/instantsearch.production.min.js" 
+    integrity="sha256-tP2geWC/2cT8rjeVSRumDQXTieBNjUyZjvON1HzWqso=" 
+    crossorigin="anonymous"></script>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+backend/db.*
+users.md
+requirement.txt
+db.sqlite3
+DRF_Python.code-workspace 
